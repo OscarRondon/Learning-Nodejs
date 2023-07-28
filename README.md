@@ -9,3 +9,5 @@
   
 - 02-Web API & Express
   - nodemon: Automatic reload web server (https://nodemon.io/ )
+  - Express JS: Web Framework for Node.js (https://expressjs.com/)
+  - Rest Client Extension for VSCode [its what we use on file api.http]

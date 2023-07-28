@@ -1,0 +1,14 @@
+### Get pokemon Ditto info
+GET http://localhost:22522/pokemon/ditto
+
+### Create New Pokemon
+POST http://localhost:22522/pokemon
+Content-Type: application/json
+
+{
+  "name": "ditto",
+  "type": "normal",
+  "moves": [
+    "transform"
+  ]
+}
