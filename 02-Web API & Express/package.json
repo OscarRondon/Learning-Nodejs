@@ -1,0 +1,17 @@
+{
+  "name": "02-web_api_and_expressjs",
+  "version": "1.0.0",
+  "description": "Web API & Express Js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch 1.http.js"
+  },
+  "author": "Oscar Rondon",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}
