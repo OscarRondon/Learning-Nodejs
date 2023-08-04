@@ -10,4 +10,10 @@
 - 02-Web API & Express
   - nodemon: Automatic reload web server (https://nodemon.io/ )
   - Express JS: Web Framework for Node.js (https://expressjs.com/)
-  - Rest Client Extension for VSCode [its what we use on file api.http]
+  - Rest Client Extension for VSCode [its use on file api.http]
+  
+  - 03-ApiRest & Cors
+    - Express
+    - ZOD [Structure schema and data validations] (https://zod.dev/)
+      - npm install zod -E
+    - [optional] npx install cors -E => const cors = require('cors') => app.user(cors())
