@@ -17,3 +17,9 @@
     - ZOD [Structure schema and data validations] (https://zod.dev/)
       - npm install zod -E
     - [optional] npx install cors -E => const cors = require('cors') => app.user(cors())
+    - Deployment on Fl0 [Deploy backend applications and databases] (https://www.fl0.com/)
+  
+- 04-MVC & MongoDB
+    - Express
+    - ZOD
+    - CORS
