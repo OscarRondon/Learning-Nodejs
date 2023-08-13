@@ -14,9 +14,13 @@ const port = process.env.PORT || 22522
 const app = express()
 app.use(json())
 
-app.use(corsMiddleware)
+app.use(corsMiddleware())
 
 app.disable('x-powered-by')
+
+app.get('/', (req, res) => {
+  res.status(200).send('Welcome to the movie database!')
+})
 
 app.use('/movies', moviesRouter)
 
