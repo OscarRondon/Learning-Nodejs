@@ -24,3 +24,9 @@
     - ZOD
     - CORS
     - MongoDB
+
+- 05-WebApi & MySQL
+    - Express
+    - ZOD
+    - CORS
+    - MySql [npm install MySql2]

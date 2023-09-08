@@ -1,0 +1,27 @@
+{
+  "name": "05-webapi-mysql",
+  "version": "1.0.0",
+  "description": "WebApy & MySql",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch app.js"
+  },
+  "author": "Oscar Rondon",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "zod": "3.21.4"
+  },
+  "devDependencies": {
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json",
+    "rules": {
+      "padded-blocks": "off"
+    }
+  }
+}
