@@ -30,3 +30,4 @@
     - ZOD
     - CORS
     - MySql [npm install MySql2]
+    - Dotenv
