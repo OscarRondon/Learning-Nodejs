@@ -31,3 +31,8 @@
     - CORS
     - MySql [npm install MySql2]
     - Dotenv
+
+- 06-Websockets [Realtime applications] [2h]
+  - Express: npm install express -E
+  - Morgar [logger]: npm install morgan -E
+  - socket.io (https://socket.io/) [Web socket a;ternative to ws(https://www.npmjs.com/package/ws)]: npm install socket.io
