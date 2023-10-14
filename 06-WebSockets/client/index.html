@@ -8,10 +8,21 @@
 
   <script type="module">
     import { io } from 'https://cdn.socket.io/4.3.2/socket.io.esm.min.js'
-    const socket = io()
+    const socket = io({
+      auth: {
+        username: "Oscar",
+        serverOffset: 0
+      }
+    })
 
     const $form = document.getElementById('form')
     const $input = document.getElementById('input')
+    const $messages = document.getElementById('messages')
+
+    socket.on('chat message', (message) => {
+      const $msg = `<li> ${message} </li>`
+      $messages.insertAdjacentHTML('beforeEnd', $msg)
+    })
 
     $form.addEventListener('submit', (evnt) => {
 
@@ -54,6 +65,21 @@
       position: relative;
     }
 
+    #messages {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #messages>li {
+      padding: .5rem 1rem;
+    }
+
+    #messages>li:nth-child(odd) {
+      background: #000;
+    }
+
+
     #form {
       bottom: 0;
       display: flex;
@@ -93,6 +119,9 @@
 <body>
   <h1>The chat</h1>
   <section id="chat">
+    <ul id="messages">
+
+    </ul>
     <form id="form">
       <input type="text" name="message" id="input" placeholder="Type a message" autocomplete="off" />
       <button type="submit">Send</button>

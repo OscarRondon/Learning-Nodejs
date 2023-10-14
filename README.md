@@ -32,7 +32,8 @@
     - MySql [npm install MySql2]
     - Dotenv
 
-- 06-Websockets [Realtime applications] [2h]
+- 06-Websockets [Realtime applications] [4h]
   - Express: npm install express -E
   - Morgar [logger]: npm install morgan -E
   - socket.io (https://socket.io/) [Web socket a;ternative to ws(https://www.npmjs.com/package/ws)]: npm install socket.io
+  - Turso [Database]: https://turso.tech/

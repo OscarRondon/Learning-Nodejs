@@ -7,7 +7,7 @@ const port = process.env.PORT || 22522
 
 const app = express()
 const server = createServer(app)
-const io = new Server(server)
+const io = new Server(server, {connectionStateRecovery:{}})
 
 io.on('connection', (socket) => {
   console.log('New client connected' + socket.id)
@@ -17,8 +17,11 @@ io.on('connection', (socket) => {
   })
   
   socket.on('chat message', (message) => {
-    console.log('Message: ' + message)
+    
+    io.emit('chat message', message)
   })
+  
+  console.log(socket.handshake.auth)
 })
 
 app.use(logger('dev'))
